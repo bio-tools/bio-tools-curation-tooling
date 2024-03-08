@@ -6,37 +6,12 @@ import copy
 import time
 import csv
 from datetime import date
-from preprints import identify_preprints
+from preprints_new import identify_preprints
+from settings import http_settings, file_settings
 
-
-##CONFIGURATION
 
 WRITE_TO_DB = False
 to_curate = 100 #how many of high_tools to write to csv file to be manually curated (int or str) ('all')
-
-http_settings = {
-
-    'host_prod':'https://bio-tools-dev.sdu.dk/api',
-    'host_local':'http://localhost:8000/api',
-    'host_dev':'https://bio-tools-dev.sdu.dk/api',
-    'login': '/rest-auth/login/',
-    'tool': '/t',
-    'validate': '/validate',
-    'json': '?format=json',
-    'username': 
-    'password' :  
-    'dev':'https://bio-tools-dev.sdu.dk/'  #to generate tool_link
-
-}
-
-file_settings = {
-    'results_csv': 'results.csv',
-    'json_tools': 'to_biotools.json',
-    'pub2tools_log':'pub2tools.log' #to check month 
-    
-}
-
-##
 
 def login_prod(http_settings):
     headers_token = {
@@ -168,21 +143,24 @@ def generate_csv_pub(tools,to_curate):
 
 def generate_json(tools, separate_preprints= True):
     file_date=check_date(pub2tools_file)  #function to return date
+    output_dir='process_scrap_{year}_{month}'.format(year=file_date[0],month=file_date[1])
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
     if separate_preprints:
         json_prp='low_tools_prp_{year}_{month}.json'.format(year=file_date[0],month=file_date[1]) #name .json file
         preprints=[tool for tool in tools if tool['is_preprint'] == True]
         json_dat_prp={"count":len(preprints),"list":preprints}
-        with open(json_prp, 'w') as json_f_prp:
+        with open(os.path.join(output_dir,json_prp), 'w') as json_f_prp:
             json.dump(json_dat_prp, json_f_prp, indent=4)
         json_pub='low_tools_pub_{year}_{month}.json'.format(year=file_date[0],month=file_date[1]) #name .json file
         pubs=[tool for tool in  tools if tool['is_preprint'] == False]
         json_dat_pub={"count":len(pubs),"list":pubs}
-        with open(json_pub, 'w') as json_f_pub:
+        with open(os.path.join(output_dir,json_pub), 'w') as json_f_pub:
             json.dump(json_dat_pub, json_f_pub, indent=4)
     else:
         json_all='low_tools_{year}_{month}.json'.format(year=file_date[0],month=file_date[1]) #name .json file
         json_dat_all={"count":len(tools),"list":tools}
-        with open(json_all, 'w') as json_f_all:
+        with open(os.path.join(output_dir,json_all), 'w') as json_f_all:
             json.dump(json_dat_all, json_f_all, indent=4)
 
 

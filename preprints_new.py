@@ -8,8 +8,7 @@ import json
 # and moved to the publications file
 
 
-json_pub = '/work/Pub2tools/low_tools_pub_2023_10.json'     # For testing
-json_prp = '/work/Pub2tools/low_tools_prp_2023_10.json'
+
 
 
 
@@ -121,14 +120,22 @@ def identify_preprint(tool):
                     ext_id=result[0].get('commentCorrectionList').get('commentCorrection')[0].get('id')
                     potential_match=search_europe_pmc(f'ext_id:"{ext_id}" NOT DOI:"{doi}"')
                     if potential_match or potential_match.get('hitCount', 0) != 0:
+                        tool.pop('publication')
+                        pubs={}
                         if ('doi' in potential_match['resultList']['result'][0].keys()):
                             new_doi=potential_match['resultList']['result'][0]['doi']
+                            pubs['doi']=new_doi
                             pub_link= f"https://doi.org/{new_doi}"
                             print("Tool {name} has a published version. Changing from {doi} to {new_doi} ".format(name=tool['name'], doi=doi, new_doi=new_doi))
-                        else:  
-                            pmid=potential_match['resultList']['result'][0]['pmid']
-                            pub_link= f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/" 
-                            print("Tool {name} has a published version. Changing from {doi} to {pmid} ".format(name=tool['name'], doi=doi, pmid=pmid))                
+                        if ('pmid' in potential_match['resultList']['result'][0].keys()): 
+                            new_pmid = potential_match['resultList']['result'][0]['pmid']
+                            pub_link = f"https://pubmed.ncbi.nlm.nih.gov/{new_pmid}/" 
+                            pubs['pmid'] = new_pmid
+                            print("Tool {name} has a published version. Changing from {doi} to {pmid} ".format(name=tool['name'], doi=doi, pmid=new_pmid))   
+                        if ('pmcid' in potential_match['resultList']['result'][0].keys()):
+                            new_pmcid = potential_match['resultList']['result'][0]['pmcid']
+                            pubs['pmcid'] = new_pmcid 
+                        tool['publication']=[pubs]
                         is_preprint=False
                     else:  # If there is no match in a database (even though there is correction list), we can't say much about it
                         is_preprint=True

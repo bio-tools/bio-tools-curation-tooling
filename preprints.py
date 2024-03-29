@@ -80,7 +80,6 @@ def is_preprint_from_response(response):
         if match:
             updated_publication = update_publication_with_match(original_publication, match)
             original_result['publication'] = [updated_publication]
-            return False, original_result
 
     return False, original_result
 

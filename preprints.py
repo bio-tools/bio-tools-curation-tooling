@@ -121,15 +121,12 @@ def identify_preprints(rerun=True, tools=None, json_pub=None, json_prp=None):
         tools = load_tools_from_json(json_prp)
         publications = load_tools_from_json(json_pub)
         print(f"Loaded {len(tools)} preprints from {json_prp}.")
-    else:
-        publications = []
 
     if not tools:
         raise ValueError("No tools to process.")
     
     updated_tools = [identify_preprint(tool) for tool in tools]
     
-    # Separate updated tools into preprints and publications
     preprints = [tool for tool in updated_tools if tool['is_preprint']]
     new_publications = [tool for tool in updated_tools if not tool['is_preprint']]
     
@@ -139,7 +136,5 @@ def identify_preprints(rerun=True, tools=None, json_pub=None, json_prp=None):
         publications.extend(new_publications)
         save_tools_to_json(publications, json_pub)
         save_tools_to_json(preprints, json_prp)
-    else:
-        pass
 
     return updated_tools

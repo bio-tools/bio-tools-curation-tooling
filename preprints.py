@@ -88,6 +88,7 @@ def is_preprint_from_response(response):
 def update_tool_with_publication(tool, is_preprint, publication_info):
     """Update the tool with publication information based on preprint status."""
     doi_url = f"https://doi.org/{tool['publication'][0]['doi']}"
+
     if is_preprint:
         tool['publication_link'] = doi_url
         tool['is_preprint'] = True
@@ -95,7 +96,7 @@ def update_tool_with_publication(tool, is_preprint, publication_info):
         tool['publication'] = [publication_info]
         tool['publication_link'] = f"https://doi.org/{publication_info[0]['doi']}"
         tool['is_preprint'] = False
-        print(tool['publication_link'])
+  
     return tool
 
 
@@ -133,6 +134,8 @@ def identify_preprints(rerun=True, tools=None, json_pub=None, json_prp=None):
     preprints = [tool for tool in updated_tools if tool['is_preprint']]
     new_publications = [tool for tool in updated_tools if not tool['is_preprint']]
     
+    print(f"There are {len(new_publications)} newly published tools. {len(preprints)} preprints remaining.")
+
     if rerun:
         publications.extend(new_publications)
         save_tools_to_json(publications, json_pub)

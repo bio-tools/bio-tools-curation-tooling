@@ -22,7 +22,6 @@ def add_tools(tools, token, http_settings, WRITE_TO_DB=False):
         'Content-Type': 'application/json',
         'Authorization': f'Token {token}'
     }
-    tools_count = len(tools)
     problem_tools = []
     ok_tools = 0
     for tool in tools:
@@ -35,7 +34,7 @@ def add_tools(tools, token, http_settings, WRITE_TO_DB=False):
         time.sleep(2)
 
             
-    print("Total tools added: {added} out of a total of: {total} ".format(added=ok_tools, total=tools_count))
+    print("Total tools added: {added} out of a total of: {total} ".format(added=ok_tools, total=len(tools)))
     if problem_tools:
         print(f"{len(problem_tools)} tools with problems:")
         print(problem_tools)

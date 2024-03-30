@@ -1,41 +1,6 @@
-import requests
-import json
 import logging
-from pathlib import Path
-
-def load_tools_from_json(json_path):
-    """Load tools from a JSON file."""
-    try:
-        with open(json_path, 'r') as file:
-            return json.load(file)['list']
-    except Exception as e:
-        logging.error(f"Error loading JSON from {json_path}: {e}")
-        return []
-
-
-def save_tools_to_json(tools, json_path):
-    """Save tools to a JSON file."""
-    try:
-        with open(json_path, 'w') as file:
-            json.dump({"count": len(tools), "list": tools}, file, indent=4)
-    except Exception as e:
-        logging.error(f"Error saving tools to JSON {json_path}: {e}")
-
-
-def search_europe_pmc(query):
-    """Search Europe PMC and return the JSON response."""
-    api_endpoint = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
-    params = {
-        'query': query,
-        'format': 'json',
-        'resultType': 'core'
-    }
-    response = requests.get(api_endpoint, params=params)
-    
-    if response.status_code == 200:
-        return response.json()
-    else:
-        return None
+from json_utils import load_tools_from_json, save_tools_to_json
+from utils import search_europe_pmc
 
 
 def query_for_potential_match(external_id: str, original_doi: str):

@@ -1,14 +1,5 @@
-import re
 import csv
 
-def check_date(pub2tools_file):
-    '''Function to check the date of the pub2tools file'''
-    log_file = open(pub2tools_file, 'r')
-    textfile = log_file.read()
-    log_file.close()
-    date = re.findall("--month (\d+)-(\d+)", textfile)
-
-    return date[0]
 
 def filter_tools(tools, to_curate, filter_condition=lambda x: True):
     """Filters tools based on a condition and curate limit."""
@@ -17,14 +8,15 @@ def filter_tools(tools, to_curate, filter_condition=lambda x: True):
         filtered_tools = filtered_tools[:int(to_curate)]
     return filtered_tools
 
+
 def generate_file_name(prefix, file_date):
     """Generates a file name based on a prefix and a date tuple."""
     year, month = file_date[0], file_date[1]
     return f"{prefix}_{year}_{month}.csv"
 
-def generate_csv(tools, to_curate, file_settings, include_preprints=True):
+
+def generate_csv(tools, to_curate, file_date, include_preprints=True):
     """Generates a CSV file for tools, separating or including preprints based on parameters."""
-    file_date = check_date(file_settings['pub2tools_log'])
     file_name = generate_file_name('pub2tools', file_date)
     
     # Filter tools based on 'is_preprint' and 'to_curate'

@@ -1,13 +1,15 @@
 import requests
+import logging
 import json
 import time
 
 http_settings = {
-    'host_prod': 'https://bio.tools/api/',
-    'host_dev': 'https://dev.bio.tools/api/',
-    'login': 'auth/token/login/',
-    'tool': 'tool/',
-    'validate': 'validate/',
+    'host_prod':'https://bio-tools-dev.sdu.dk/api',
+    'host_local':'http://localhost:8000/api',
+    'host_dev':'https://bio-tools-dev.sdu.dk/api',
+    'login': '/rest-auth/login/',
+    'tool': '/t',
+    'validate': '/validate',
     'json': '?format=json',
     'dev':'https://bio-tools-dev.sdu.dk/' 
 }
@@ -22,6 +24,7 @@ def login_prod(username, password):
     })
 
     token_r = requests.post(http_settings['host_prod'] + http_settings['login'] + http_settings['json'], headers = headers_token, data = user)
+    logging.info(token_r)
     token = json.loads(token_r.text)['key']
     return token
 
@@ -46,7 +49,7 @@ def insert_tool(tool, url, headers):
     response = requests.post(url, headers=headers, data=json.dumps(tool))
         
     if response.ok:
-        print(f'{tool['biotoolsID']} Added {response.status_code}')
+        print(f"{tool['biotoolsID']} Added {response.status_code}")
         return True, response.text
 
     print("An Error:",tool['biotoolsID'], response.text)

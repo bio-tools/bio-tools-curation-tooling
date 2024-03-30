@@ -1,6 +1,6 @@
 import logging
-from json_utils import load_tools_from_json, save_tools_to_json
-from utils import search_europe_pmc
+from utils.json_utils import load_tools_from_json, save_tools_to_json
+from utils.utils import search_europe_pmc
 
 
 def query_for_potential_match(external_id: str, original_doi: str):

@@ -1,3 +1,5 @@
+import re
+
 def generate_biotoolsID(name):
     biotoolsID = re.sub('[^a-zA-Z0-9_~ .-]*', '',name)
     biotoolsID = re.sub('[ ]+','-', biotoolsID)
@@ -15,7 +17,7 @@ def process_tools(tools):
 
         if tool['confidence_flag'].lower() == 'high':
             #tool['date']= check_date(pub2tools_file)
-            url = '{d}{bt}'.format(d=http_settings['dev'], bt=tool['biotoolsID'])
+            url = '{d}{bt}'.format(d='https://bio-tools-dev.sdu.dk/', bt=tool['biotoolsID'])
             tool['tool_link'] = url
             high_tools.append(tool)
 

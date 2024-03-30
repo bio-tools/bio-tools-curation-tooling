@@ -8,7 +8,8 @@ http_settings = {
     'login': 'auth/token/login/',
     'tool': 'tool/',
     'validate': 'validate/',
-    'json': '?format=json'
+    'json': '?format=json',
+    'dev':'https://bio-tools-dev.sdu.dk/' 
 }
 
 def login_prod(username, password):

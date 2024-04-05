@@ -60,7 +60,7 @@ def update_tool_with_publication(tool, is_preprint, publication_info):
         if publication_info:
             tool['publication'] = publication_info
         if 'doi' in tool['publication'][0]:
-            tool['publication_link'] = f"https://doi.org/{publication_info[0]['doi']}"
+            tool['publication_link'] = f"https://doi.org/{tool['publication'][0]['doi']}"
         else:
             tool['publication_link'] = f"https://pubmed.ncbi.nlm.nih.gov/{tool['publication'][0]['pmid']}"
         

@@ -18,7 +18,7 @@ def generate_file_name(prefix, file_date):
 def generate_csv(pub_tools, pub_preprints, to_curate, file_date):
     """Generates a CSV file for published tools and newly published preprints."""
     file_name = generate_file_name('pub2tools', file_date)
-    tu_curate_tools = filter_tools(pub_tools, to_curate)
+    to_curate_tools = filter_tools(pub_tools, to_curate)
     # Use to_curate publications and previously identified preprints
     combined_tools = to_curate_tools + pub_preprints    
     # Write to CSV
@@ -31,6 +31,6 @@ def generate_csv(pub_tools, pub_preprints, to_curate, file_date):
         for tool in combined_tools[to_curate:]:
             writerobj.writerow([tool['tool_link'], tool['name'], tool['homepage'], tool['publication_link']])
     
-    leftover_tools = [tool for tool in tools if tool not in combined_tools]
+    leftover_tools = [tool for tool in pub_tools if tool not in combined_tools]
     return combined_tools, leftover_tools
 

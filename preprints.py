@@ -102,7 +102,6 @@ def identify_preprints(rerun=True, tools=None, json_prp=None):
     preprints = [tool for tool in updated_tools if tool['is_preprint']]
     publications = [tool for tool in updated_tools if not tool['is_preprint']]
     
-    print(f"There are {len(new_publications)} newly published tools. {len(preprints)} preprints remaining.")
 
     if rerun:
         print(f"There are {len(publications)} newly published tools. {len(preprints)} preprints remaining.")

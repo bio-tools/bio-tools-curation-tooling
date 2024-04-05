@@ -51,14 +51,19 @@ def is_preprint_from_response(response):
 
 def update_tool_with_publication(tool, is_preprint, publication_info):
     """Update the tool with publication information based on preprint status."""
-    doi_url = f"https://doi.org/{tool['publication'][0]['doi']}"
-
+    
     if is_preprint:
+        doi_url = f"https://doi.org/{tool['publication'][0]['doi']}"
         tool['publication_link'] = doi_url
         tool['is_preprint'] = True
     else:
-        tool['publication'] = [publication_info]
-        tool['publication_link'] = f"https://doi.org/{publication_info[0]['doi']}"
+        if publication_info:
+            tool['publication'] = publication_info
+        if 'doi' in tool['publication'][0]:
+            tool['publication_link'] = f"https://doi.org/{publication_info[0]['doi']}"
+        else:
+            tool['publication_link'] = f"https://pubmed.ncbi.nlm.nih.gov/{tool['publication'][0]['pmid']}"
+        
         tool['is_preprint'] = False
   
     return tool
@@ -68,7 +73,7 @@ def identify_preprint(tool):
     """Identify if a tool's publication is a preprint and update its information."""
     if 'doi' not in tool['publication'][0]:
         print("No DOI found for this tool.")
-        return None, False  # Assuming not a preprint if no DOI
+        return update_tool_with_publication(tool, False, None)  # Assuming not a preprint if no DOI
 
     doi = tool['publication'][0]['doi']
     response = search_europe_pmc(doi)
@@ -77,29 +82,35 @@ def identify_preprint(tool):
     return update_tool_with_publication(tool, is_preprint, result.get('publication'))
 
 
-def identify_preprints(rerun=True, tools=None, json_pub=None, json_prp=None):
+def identify_preprints(rerun=True, tools=None, json_prp=None):
     """Identify preprints from a list of tools and update their publication status."""
     if rerun:
-        if not json_pub or not json_prp:
+        if not json_prp:
             raise ValueError("JSON file paths must be provided in rerun mode.")
-
+        if tools:
+            raise ValueError("In rerun mode provide only path to preprints file.")
         tools = load_tools_from_json(json_prp)
-        publications = load_tools_from_json(json_pub)
-        print(f"Loaded {len(tools)} preprints from {json_prp}.")
 
+    # Preprints file needed in both modes
+    prp_tools = load_tools_from_json(json_prp)
+    print(f"Loaded {len(prp_tools)} preprints from {json_prp}.")
     if not tools:
         raise ValueError("No tools to process.")
-    
+            
     updated_tools = [identify_preprint(tool) for tool in tools]
     
     preprints = [tool for tool in updated_tools if tool['is_preprint']]
-    new_publications = [tool for tool in updated_tools if not tool['is_preprint']]
+    publications = [tool for tool in updated_tools if not tool['is_preprint']]
     
     print(f"There are {len(new_publications)} newly published tools. {len(preprints)} preprints remaining.")
 
     if rerun:
-        publications.extend(new_publications)
-        save_tools_to_json(publications, json_pub)
-        save_tools_to_json(preprints, json_prp)
+        print(f"There are {len(publications)} newly published tools. {len(preprints)} preprints remaining.")
+        save_tools_to_json(preprints,json_prp)
+    else:
+        print(f"There are {len(publications)} published tools and {len(preprints)} preprints.")
+        prp_tools.extend(preprints)
+        save_tools_to_json(prp_tools, json_prp)
 
-    return updated_tools
+
+    return publications

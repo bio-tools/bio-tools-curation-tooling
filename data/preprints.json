@@ -1,5 +1,5 @@
 {
-    "count": 1204,
+    "count": 1243,
     "list": [
         {
             "name": "HISTA",
@@ -77565,6 +77565,2455 @@
             "biotoolsID": "pub2tools2023__protfound-v",
             "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__protfound-v",
             "publication_link": "https://doi.org/10.1101/2023.11.27.568815",
+            "is_preprint": true
+        },
+        {
+            "name": "CBioProfiler",
+            "description": "a web and standalone pipeline for cancer biomarker and subtype characterization.\n\nPublic Gene Expression Studies Included in CBioProfiler.\n\na web and standalone pipeine for cancer biomarker and subtype characteration from molecular level to clinical settings.\n\nCBioProfiler (Cancer Biomarker and subtype Profiler) was developed to facilitate researchers and clinicians to screen, characterize, annotate and translate cancer biomarkers and subtypes from molecular level to clinical settings more comfortably with graphical user interfaces (GUI), which will help implement targeted clinical diagnosis and treatment measures for different patients to achieve precision medicine.",
+            "homepage": "https://cbioprofiler.znhospital.cn/CBioProfiler/",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2436",
+                            "term": "Gene-set enrichment analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3766",
+                            "term": "Weighted correlation network analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0314",
+                            "term": "Gene expression profiling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3463",
+                            "term": "Expression correlation analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3891",
+                            "term": "Essential dynamics"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3360",
+                    "term": "Biomarkers"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2640",
+                    "term": "Oncology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0203",
+                    "term": "Gene expression"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3577",
+                    "term": "Personalised medicine"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3173",
+                    "term": "Epigenomics"
+                }
+            ],
+            "language": [
+                "R"
+            ],
+            "link": [
+                {
+                    "url": "https://liuxiaoping2020.github.io/CBioProfilerDatasource/",
+                    "type": [
+                        "Other"
+                    ]
+                },
+                {
+                    "url": "https://gitee.com/liuxiaoping2020/CBioProfiler",
+                    "type": [
+                        "Other"
+                    ]
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.17.22269448"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Xiaoping Liu",
+                    "email": "liuxiaoping@whu.edu.cn",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Sheng Li",
+                    "email": "wangxinghuan@whu.edu.cn",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Xinghuan Wang",
+                    "email": "lisheng-znyy@whu.edu.cn",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__cbioprofiler",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__cbioprofiler",
+            "publication_link": "https://doi.org/10.1101/2022.01.17.22269448",
+            "is_preprint": true
+        },
+        {
+            "name": "MethylScore",
+            "description": "pipeline for accurate and context-aware identification of differentially methylated regions from population-scale plant WGBS data.\n\nQuay is the best place to build, store, and distribute your containers. Public repositories are always free.\n\nSomething went wrong when trying to load Quay! Please report this to support@quay.io.",
+            "homepage": "https://quay.io/repository/beckerlab/methylscore",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3809",
+                            "term": "DMR identification"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3196",
+                            "term": "Genotyping"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3186",
+                            "term": "Bisulfite mapping"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3919",
+                            "term": "Methylation calling"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3674",
+                    "term": "Methylated DNA immunoprecipitation"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3295",
+                    "term": "Epigenetics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0780",
+                    "term": "Plant biology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0654",
+                    "term": "DNA"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0102",
+                    "term": "Mapping"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.06.475031"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Sebastian J. Schultheiss",
+                    "email": "sebastian.schultheiss@computomics.com",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Claude Becker",
+                    "email": "claude.becker@biologie.uni-muenchen.de",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__methylscore",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__methylscore",
+            "publication_link": "https://doi.org/10.1101/2022.01.06.475031",
+            "is_preprint": true
+        },
+        {
+            "name": "SERM",
+            "description": "a self-consistent deep learning solution for rapid and accurate gene expression recovery.\n\nABSTRACT Single cell RNA sequencing (scRNA-seq) is a promising technique to determine the states of individual cells and classify novel cell subtypes. Computationally, the processing of scRNA-seq data presents a daunting challenge because of the noisy nature and humongous size and dimensionality of the data. Compromised solution by omitting the genes with low expression is commonly taken in current scRNA-seq analysis, which leads to inaccurate gene counts. In this paper, we introduce a broadly applicable data-driven gene expression recovery framework, referred to as the self-consistent expression recovery machine (SERM), to impute the missing gene expression. Using deep learning, SERM first learns from a subset of the noisy gene expression data to estimate the underlying data distribution",
+            "homepage": "https://www.analyxus.com/compute/serm",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3557",
+                            "term": "Imputation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2495",
+                            "term": "Expression analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3196",
+                            "term": "Genotyping"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0203",
+                    "term": "Gene expression"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3170",
+                    "term": "RNA-Seq"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2229",
+                    "term": "Cell biology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3512",
+                    "term": "Gene transcripts"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3794",
+                    "term": "RNA immunoprecipitation"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.18.476789"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Lei Xing",
+                    "email": "lei@stanford.edu",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__serm",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__serm",
+            "publication_link": "https://doi.org/10.1101/2022.01.18.476789",
+            "is_preprint": true
+        },
+        {
+            "name": "ACDC",
+            "description": "Analysis of Congruent Diversification Classes.\n\nSummary 1. Diversification rates inferred from phylogenies are not identifiable. There are infinitely many combinations of speciation and extinction rate functions that have the exact same likelihood score for a given phylogeny, building a congruence class. The specific shape and characteristics of such congruence classes have not yet been studied. Whether speciation and extinction rate functions within a congruence class share common features is also not known. 2. Instead of striving to make the diversification rates identifiable, we can embrace their inherent non-identifiable nature\n\n||| HOMEPAGE BROKEN!\n\n||| NAME EQUAL TO (PUB. DIFFERENT) bio.tools/acdc_cell\n\n||| NAME (ACDC) SIMILAR TO (PUB. DIFFERENT) bio.tools/acdc_estimation (acdc), bio.tools/acdc (acdc)",
+            "homepage": "https://github.com/afmagee/ACDC",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3454",
+                            "term": "Phasing"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0325",
+                            "term": "Phylogenetic tree comparison"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0084",
+                    "term": "Phylogeny"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3050",
+                    "term": "Biodiversity"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2269",
+                    "term": "Statistics and probability"
+                }
+            ],
+            "language": [
+                "R"
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.12.476142"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Sebastian H\u00f6hna",
+                    "email": "hoehna@lmu.de",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__acdc",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__acdc",
+            "publication_link": "https://doi.org/10.1101/2022.01.12.476142",
+            "is_preprint": true
+        },
+        {
+            "name": "ABRIDGE",
+            "description": "An ultra-compression software for SAM alignment files.\n\nABSTRACT Advancement in technology has enabled sequencing machines to produce vast amounts of genetic data, causing an increase in storage demands. Most genomic software utilizes read alignments for several purposes including transcriptome assembly and gene count estimation. Herein we present, ABRIDGE, a state-of-the-art compressor for SAM alignment files offering users both lossless and lossy compression options. This reference-based file compressor achieves the best compression ratio among all compression software ensuring lower space demand and faster file transmission. Central to the software is a novel algorithm that retains non-redundant information. This new approach has allowed ABRIDGE to achieve a compression 16% higher than the second-best compressor for RNA-Seq reads and over 35% for DNA-Seq reads\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://github.com/sagnikbanerjee15/Abridge",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3258",
+                            "term": "Transcriptome assembly"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3198",
+                            "term": "Read mapping"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0484",
+                            "term": "SNP detection"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3170",
+                    "term": "RNA-Seq"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0196",
+                    "term": "Sequence assembly"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3308",
+                    "term": "Transcriptomics"
+                }
+            ],
+            "license": "MIT",
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.04.474935"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Sagnik Banerjee",
+                    "email": "sagnikbanerjee15@gmail.com",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Carson Andorf",
+                    "email": "carson.andorf@usda.gov",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__abridge",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__abridge",
+            "publication_link": "https://doi.org/10.1101/2022.01.04.474935",
+            "is_preprint": true
+        },
+        {
+            "name": "ProtFinder",
+            "description": "finding subcellular locations of proteins using protein interaction networks.\n\nA bstract. Protein subcellular localization prediction plays a crucial role in improving our understanding of different diseases and consequently assists in building drug targeting and drug development pipelines. Proteins are known to co-exist at multiple subcellular locations which make the task of prediction extremely challenging. A protein interaction network is a graph that captures interactions between different proteins. It is safe to assume that if two proteins are interacting, they must share some subcellular locations. With this regard, we propose ProtFinder the first deep learning-based model that exclusively relies on protein interaction networks to predict the multiple subcellular locations of proteins. We also integrate biological priors like the cellular component of Gene Ontology to make ProtFinder a more biology-aware intelligent system\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://github.com/UCLouvain-CBIO/ProtFinder",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2489",
+                            "term": "Subcellular localisation prediction"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3094",
+                            "term": "Protein interaction network prediction"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2492",
+                            "term": "Protein interaction prediction"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3891",
+                            "term": "Essential dynamics"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_2229",
+                    "term": "Cell biology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0128",
+                    "term": "Protein interactions"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0154",
+                    "term": "Small molecules"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0634",
+                    "term": "Pathology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.11.475836"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Aayush Grover",
+                    "email": "Aayush.Grover@iiitb.ac.in",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Laurent Gatto",
+                    "email": "laurent.gatto@uclouvain.be",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__protfinder",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__protfinder",
+            "publication_link": "https://doi.org/10.1101/2022.01.11.475836",
+            "is_preprint": true
+        },
+        {
+            "name": "STARE",
+            "description": "A publicly-available, blood-free quantification approach for PET tracers with irreversible kinetics.\n\nThe adapted Activity-By-Contact model for enhancer-gene assignment and its application to single-cell data.\n\nIntroduction Full quantification of positron emission tomography (PET) data requires an input function. This generally means arterial blood sampling, which is invasive, labor-intensive and burdensome. There is no current, standardized method to fully quantify PET radiotracers with irreversible kinetics in the absence of blood data. Here, we present Source-to-Target Automatic Rotating Estimation (STARE), a novel, data-driven approach to quantify the net influx rate (K<sub>i< sub>) of irreversible PET radiotracers, that requires only individual-level PET data and no blood data\n\n||| HOMEPAGE BROKEN!\n\n||| CORRECT NAME OF TOOL COULD ALSO BE ABC-score, ABC-model, Activity-By-Contact, enhancer",
+            "homepage": "https://github.com/schulzlab/STARE",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3799",
+                            "term": "Quantification"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3659",
+                            "term": "Regression analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3435",
+                            "term": "Standardisation and normalisation"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3452",
+                    "term": "Tomography"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3173",
+                    "term": "Epigenomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0749",
+                    "term": "Transcription factors and regulatory sites"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3169",
+                    "term": "ChIP-seq"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3170",
+                    "term": "RNA-Seq"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1016/J.NEUROIMAGE.2022.118901",
+                    "pmid": "35026425",
+                    "pmcid": "PMC8969778"
+                },
+                {
+                    "doi": "10.1101/2022.01.28.478202"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Elizabeth A Bartlett",
+                    "email": "eab2266@cumc.columbia.edu",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Marcel H. Schulz",
+                    "email": "marcel.schulz@em.uni-frankfurt.de",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__stare",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__stare",
+            "publication_link": "https://doi.org/10.1016/J.NEUROIMAGE.2022.118901",
+            "is_preprint": true
+        },
+        {
+            "name": "microgliaST",
+            "description": "a web server for microglia spatiotemportal pattern analysis in normal and disordered brains.\n\nBrain is the most complex organ of living organisms, as the celebrated cells in the brain, microglia play an indispensable role in the brain\u2019s immune microenvironment. Microglia have critical roles not only in neural development and homeostasis, but also in neurodegenerative diseases and malignant of the central nervous system. However, little is known about the dynamic characteristics of microglia during development or disease conditions. Recently, the single-cell RNA sequencing technologies have become possible to characterize the heterogeneity of immune system in brain. But it posed computational challenges on integrating and utilizing the massive published datasets to dissect the spatiotemporal characterization of microglia\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "http://bio-bigdata.hrbmu.edu.cn/MST",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3435",
+                            "term": "Standardisation and normalisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3891",
+                            "term": "Essential dynamics"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0314",
+                            "term": "Gene expression profiling"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3170",
+                    "term": "RNA-Seq"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3308",
+                    "term": "Transcriptomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0634",
+                    "term": "Pathology"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.08.475469"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Chunlong Zhang",
+                    "email": "zhangchunlong@hrbmu.edu.cn",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__microgliast",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__microgliast",
+            "publication_link": "https://doi.org/10.1101/2022.01.08.475469",
+            "is_preprint": true
+        },
+        {
+            "name": "TooT-SC",
+            "description": "Predicting Eleven Substrate Classes of Transmembrane Transport Proteins.\n\nBackground Transporters form a significant proportion of the proteome and play an important role in mediating the movement of compounds across membranes. Transport proteins are difficult to characterize experimentally, so there is a need for computational tools that predict the substrates transported in order to annotate the large number of genomes being sequenced. Recently we developed a dataset of eleven substrate classes from Swiss-Prot using the ChEBI ontology as the basis for the definition of the classes. Results. We extend our earlier work TranCEP , which predicted seven substrate classes, to the new dataset with eleven substrate classes. Like TranCEP, TooT-SC combines pairwise amino acid composition (PAAC) of the protein, with evolutionary information captured in a multiple sequence alignment (MSA) using TM-Coffee, and restriction to important positions of the alignment using TCS\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://github.com/bioinformatics-group/TooT-SC",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0269",
+                            "term": "Transmembrane protein prediction"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0491",
+                            "term": "Pairwise sequence alignment"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2241",
+                            "term": "Transmembrane protein visualisation"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0121",
+                    "term": "Proteomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0820",
+                    "term": "Membrane and lipoproteins"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0080",
+                    "term": "Sequence analysis"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.25.477715"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Gregory Butler",
+                    "email": "gregory.butler@concordia.ca",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__toot-sc",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__toot-sc",
+            "publication_link": "https://doi.org/10.1101/2022.01.25.477715",
+            "is_preprint": true
+        },
+        {
+            "name": "PDBspheres",
+            "description": "a method for finding 3D similarities in local regions in proteins.\n\nPDBspheres.COVID19_PL2pro.protein_ligand_summary.txt.zip.\n\nLibrary.Pdb_HET.at_least_1_HETATM_and_5_CA.list.txt.zip.\n\nLibrary.Pdb_PEP.peptide_25_and_sphere_5_CA.list.txt.zip.",
+            "homepage": "http://proteinmodel.org/AS2TS/PDBspheres",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2575",
+                            "term": "Binding site prediction"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0495",
+                            "term": "Local alignment"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2844",
+                            "term": "Structure clustering"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0478",
+                            "term": "Molecular docking"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0272",
+                            "term": "Residue contact prediction"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3534",
+                    "term": "Protein binding sites"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2275",
+                    "term": "Molecular modelling"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2814",
+                    "term": "Protein structure analysis"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0154",
+                    "term": "Small molecules"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0623",
+                    "term": "Gene and protein families"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.04.474934"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Adam T. Zemla",
+                    "email": "zemla1@llnl.gov",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__pdbspheres",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__pdbspheres",
+            "publication_link": "https://doi.org/10.1101/2022.01.04.474934",
+            "is_preprint": true
+        },
+        {
+            "name": "LuminoCell",
+            "description": "a versatile and affordable luminometer platform for monitoring in-cell luciferase-based reporters.\n\nLuciferase reporter assays represent a simple and sensitive experimental system in cell and molecular biology to study multiple biological processes. However, the application of these assays is often limited by the costs of conventional luminometer instruments and the versatility of their use in different experimental conditions. Therefore, we aimed to develop a small, affordable luminometer allowing continuous measurement of luciferase activity, designed for inclusion into various kinds of tissue culture incubators. Here we introduce LuminoCell - an open-source platform for the construction of an affordable, sensitive, and portable luminometer capable of realtime monitoring in-cell luciferase activity\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://github.com/barta-lab/LuminoCell",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0310",
+                            "term": "Sequence assembly"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_2229",
+                    "term": "Cell biology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0602",
+                    "term": "Molecular interactions, pathways and networks"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3047",
+                    "term": "Molecular biology"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.28.478134"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Tom\u00e1\u0161 B\u00e1rta",
+                    "email": "tbarta@med.muni.cz",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__luminocell",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__luminocell",
+            "publication_link": "https://doi.org/10.1101/2022.01.28.478134",
+            "is_preprint": true
+        },
+        {
+            "name": "bigsdb",
+            "description": "Genomic library of <i>Bordetella</i>.\n\nHelp Tooltips ExpandContract Modify form Modify dashboard.\n\nEnter search criteria or leave blank to browse all records. Modify form parameters to filter or enter a list of values.\n\nIsolate provenance/primary metadata fields Combine with: AND OR.",
+            "homepage": "https://bigsdb.pasteur.fr/cgi-bin/bigsdb/bigsdb.pl?db=pubmlst_bordetella_isolates&page=query&project_list=23&submit=1",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3840",
+                            "term": "Multilocus sequence typing"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3216",
+                            "term": "Scaffolding"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0324",
+                            "term": "Phylogenetic analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3695",
+                            "term": "Filtering"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3192",
+                            "term": "Sequence trimming"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0084",
+                    "term": "Phylogeny"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3305",
+                    "term": "Public health and epidemiology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2830",
+                    "term": "Immunoproteins and antigens"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0154",
+                    "term": "Small molecules"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0625",
+                    "term": "Genotype and phenotype"
+                }
+            ],
+            "link": [
+                {
+                    "url": "https://bigsdb.pasteur.fr/cgi-bin/bigsdb/bigsdb.pl?db=pubmlst_bordetella_isolates&page=query&project_list=24&submit=1",
+                    "type": [
+                        "Other"
+                    ]
+                },
+                {
+                    "url": "https://bigsdb.pasteur.fr/cgi-bin/bigsdb/bigsdb.pl?db=pubmlst_bordetella_isolates&page=query&project_list=25&submit=1",
+                    "type": [
+                        "Other"
+                    ]
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.20.475763"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Sylvain Brisse",
+                    "email": "sylvain.brisse@pasteur.fr",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__bigsdb",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__bigsdb",
+            "publication_link": "https://doi.org/10.1101/2022.01.20.475763",
+            "is_preprint": true
+        },
+        {
+            "name": "COVID-Net CXR-S",
+            "description": "Deep Convolutional Neural Network for Severity Assessment of COVID-19 Cases from Chest X-ray Images.\n\nThe world is still struggling in controlling and containing the spread of the COVID-19 pandemic caused by the SARS-CoV-2 virus. The medical conditions associated with SARS-CoV-2 infections have resulted in a surge in the number of patients at clinics and hospitals, leading to a significantly increased strain on healthcare resources. As such, an important part of managing and handling patients with SARS-CoV-2 infections within the clinical workflow is severity assessment, which is often conducted with the use of chest X-ray (CXR) images. In this work, we introduce COVID-Net CXR-S, a convolutional neural network for predicting the airspace severity of a SARS-CoV-2 positive patient based on a CXR image of the patient's chest\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "http://www.covid-net.ml",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3927",
+                            "term": "Network analysis"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3384",
+                    "term": "Medical imaging"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3452",
+                    "term": "Tomography"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.3390/DIAGNOSTICS12010025",
+                    "pmid": "35054194",
+                    "pmcid": "PMC8774375"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Hossein Aboutalebi",
+                    "email": "haboutal@uwaterloo.ca",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__covid-net-cxr-s",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__covid-net-cxr-s",
+            "publication_link": "https://doi.org/10.3390/DIAGNOSTICS12010025",
+            "is_preprint": true
+        },
+        {
+            "name": "NNeurite",
+            "description": "artificial neuronal networks for the unsupervised extraction of axonal and dendritic time-lapse signals.\n\nFluorescence microscopy of Ca 2+ transients in small neurites of the behaving mouse provides an unprecedented view of the micrometer-scale mechanisms supporting neuronal communication and computation, and therefore opens the way to understanding their role in cognition. However, the exploitation of this growing and precious experimental data is impeded by the scarcity of methods dedicated to the analysis of images of neurites activity in vivo. We present NNeurite, a set of mathematical and computational techniques specialized for the analysis of time-lapse microscopy images of neurite activity in small behaving animals. Starting from noisy and unstable microscopy images containing an unknown number of small neurites, NNeurite simultaneously aligns images, denoises signals and extracts the location and the temporal activity of the sources of Ca 2+ transients\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://github.com/nicolasC/NNeurite",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3450",
+                            "term": "Neurite measurement"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3553",
+                            "term": "Image annotation"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3382",
+                    "term": "Imaging"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3315",
+                    "term": "Mathematics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3500",
+                    "term": "Zoology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0749",
+                    "term": "Transcription factors and regulatory sites"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.11.475549"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Nicolas Chenouard",
+                    "email": "nicolas.chenouard@u-bordeaux.fr",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__nneurite",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__nneurite",
+            "publication_link": "https://doi.org/10.1101/2022.01.11.475549",
+            "is_preprint": true
+        },
+        {
+            "name": "DEBM",
+            "description": "an open-source Python package for developing, evaluating, and visualizing behavioral models.\n\n<p>The last decade was characterized by an emphasis on enhancing reproducibility and replicability in the social sciences. To contribute to these efforts within the decision-making research field, we introduce DEBM (Decision from Experience Behavior Modeling) an open-source Python package. The main goal of DEBM is to serve as a central colloberative pool of models and methods in the decision from experience domain. Specifically, it provides a convenient \u201cplayground\u201d for developing models or experimenting with existing ones. DEBM includes many features such as multiprocessing, parameter estimation, visualization, and more. In this paper we cover the basic functionality of DEBM by simulating behavior using an existing model and given parameters, and recovering these parameters using grid search.< p>\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://github.com/ofiryakobi/debm",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0337",
+                            "term": "Visualisation"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3361",
+                    "term": "Laboratory techniques"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2269",
+                    "term": "Statistics and probability"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0621",
+                    "term": "Model organisms"
+                }
+            ],
+            "language": [
+                "Python"
+            ],
+            "publication": [
+                {
+                    "doi": "10.31234/OSF.IO/3EMDW"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__debm",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__debm",
+            "publication_link": "https://doi.org/10.31234/OSF.IO/3EMDW",
+            "is_preprint": true
+        },
+        {
+            "name": "BrainStat",
+            "description": "a toolbox for brain-wide statistics and multimodal feature associations.\n\nA toolbox for statistical analysis of neuroimaging data.\n\nWelcome to BrainStat\u2019s documentation!.\n\nA toolbox for statistical analysis of neuroimaging data \u2014 BrainStat 0.4.2 documentation.\n\nDownload and share free MATLAB code, including functions, models, apps, support packages and toolboxes.\n\nYou are now following this Submission.\n\nYou will see updates in your followed content feed.\n\nYou may receive emails, depending on your communication preferences.\n\nhttps://brainstat.readthedocs.io.\n\nBrainStat is a toolbox for the statistical analysis and context decoding of neuroimaging data.\n\nFree document hosting provided by Read the Docs.",
+            "homepage": "https://www.mathworks.com/matlabcentral/fileexchange/89827-brainstat",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3659",
+                            "term": "Regression analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3435",
+                            "term": "Standardisation and normalisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0337",
+                            "term": "Visualisation"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3384",
+                    "term": "Medical imaging"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3304",
+                    "term": "Neurobiology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2269",
+                    "term": "Statistics and probability"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0203",
+                    "term": "Gene expression"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3444",
+                    "term": "MRI"
+                }
+            ],
+            "language": [
+                "Python",
+                "MATLAB"
+            ],
+            "license": "BSD-3-Clause",
+            "link": [
+                {
+                    "url": "https://pypi.org/project/brainstat/",
+                    "type": [
+                        "Repository"
+                    ]
+                }
+            ],
+            "documentation": [
+                {
+                    "url": "https://brainstat.readthedocs.io/",
+                    "type": [
+                        "User manual"
+                    ]
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.18.476795"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Reinder Vos de Wael",
+                    "email": "boris.bernhardt@mcgill.ca",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Boris C. Bernhardt",
+                    "email": "reinder.vosdewael@mail.mcgill.ca",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__brainstat",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__brainstat",
+            "publication_link": "https://doi.org/10.1101/2022.01.18.476795",
+            "is_preprint": true
+        },
+        {
+            "name": "OpInMod",
+            "description": "An Open Source Approach to Model Economic Inertia Dispatch in Power Systems.\n\nOpen Inertia Modelling (OpInMod) is a modelling framework designed to create unit commitment and economic inertia dispatch optimisation problems. Present energy system modelling generators do not consider power system inertia in unit commitment and economic dispatch modelling to assess future energy system pathways. However, maintaining sufficient power system inertia in power systems is the foundation for power frequency controllability. The work at hand describes the functionality and approaches of open source tool OpInMod. The softwares universal design approach increases reuse potential. OpInMod is distributed with a set of examples to test and understand OpInMod\n\n||| HOMEPAGE BROKEN!\n\n||| CORRECT NAME OF TOOL COULD ALSO BE Open Inertia Modelling",
+            "homepage": "https://github.com/hnnngt/OpInMod.340",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3928",
+                            "term": "Pathway analysis"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0602",
+                    "term": "Molecular interactions, pathways and networks"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2259",
+                    "term": "Systems biology"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.20944/PREPRINTS202201.0419.V1"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__opinmod",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__opinmod",
+            "publication_link": "https://doi.org/10.20944/PREPRINTS202201.0419.V1",
+            "is_preprint": true
+        },
+        {
+            "name": "VSS-Hi-C",
+            "description": "Variance-stabilized signals for chromatin 3D contacts.\n\nChromatin conformation capture assays output a value for each pair of positions that quantifies their strength of interaction in the nucleus. Hi-C signals lack the property of variance stabilization. That is, a difference between 0 and 200 reads usually has a very different statistical importance from a difference between 2000 and 2200 reads. This deficiency impedes analysis and visualization of Hi-C data. Here, we propose an approach called VSS-Hi-C that normalizes Hi-C data to produce variance-stabilized signals. It does so by learning the empirical relationship between the mean and variance of Hi-C values and transforming these values such mean and variance of the data are no longer dependent to each other\n\n||| HOMEPAGE MISSING!",
+            "homepage": "https://doi.org/10.1101/2021.10.19.465027",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3435",
+                            "term": "Standardisation and normalisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0337",
+                            "term": "Visualisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3659",
+                            "term": "Regression analysis"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0654",
+                    "term": "DNA"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3169",
+                    "term": "ChIP-seq"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0203",
+                    "term": "Gene expression"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2021.10.19.465027"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Maxwell Libbrecht",
+                    "email": "maxwl@sfu.ca",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__vss-hi-c",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__vss-hi-c",
+            "publication_link": "https://doi.org/10.1101/2021.10.19.465027",
+            "is_preprint": true
+        },
+        {
+            "name": "flopp",
+            "description": "Extremely Fast Long-Read Polyploid Haplotype Phasing by Uniform Tree Partitioning.\n\nResolving haplotypes in polyploid genomes using phase information from sequencing reads is an important and challenging problem. We introduce two new mathematical formulations of polyploid haplotype phasing: (1) the min-sum max tree partition problem, which is a more flexible graphical metric compared with the standard minimum error correction (MEC) model in the polyploid setting, and (2) the uniform probabilistic error minimization model, which is a probabilistic analogue of the MEC model. We incorporate both formulations into a long-read based polyploid haplotype phasing method called <i>flopp< i>. We show that flopp compares favorably with state-of-the-art algorithms-up to 30 times faster with 2 times fewer switch errors on 6 \u00d7 ploidy simulated data\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://github.com/bluenote-1577/flopp",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3454",
+                            "term": "Phasing"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0487",
+                            "term": "Haplotype mapping"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3196",
+                            "term": "Genotyping"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_2269",
+                    "term": "Statistics and probability"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2885",
+                    "term": "DNA polymorphism"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0780",
+                    "term": "Plant biology"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1089/CMB.2021.0436",
+                    "pmid": "35041529",
+                    "pmcid": "PMC8892958"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Yun William Yu",
+                    "email": "ywyu@math.toronto.edu",
+                    "orcidid": "https://orcid.org/0000-0002-8275-9576",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__flopp",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__flopp",
+            "publication_link": "https://doi.org/10.1089/CMB.2021.0436",
+            "is_preprint": true
+        },
+        {
+            "name": "PanopTILs",
+            "description": "A panoptic segmentation approach for tumor-infiltrating lymphocyte assessment.\n\nIt is a unique large-scale dataset of annotated boundaries of histologic regions, along with the locations, classification labels, and segmentation boundaries of nuclei of the same fields of view. PanopTILs was created by reconciling and expanding two public datasets, BCSS and NuCLS, to enable in-depth analysis of the tumor microenvironment (TME) in whole-slide images (WSI) of H&E stained slides of breast cancer. Panoptic segmentation is particularly useful for, but not limited to, the assessment of tumor-infiltrating lymphocytes (TILs) in accordance with clinical guidelines. Having an integrated dataset enables training deep-learning models that produce biologically-sensible predictions.\n\nAn integrated region and cell-level annotation dataset for panoptic segmentation of the breast tumor microenvironment.\n\n||| CORRECT NAME OF TOOL COULD ALSO BE MuTILs",
+            "homepage": "http://sites.google.com/view/panoptils",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0337",
+                            "term": "Visualisation"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3384",
+                    "term": "Medical imaging"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2640",
+                    "term": "Oncology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0749",
+                    "term": "Transcription factors and regulatory sites"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.08.22268814"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Mohamed Amgad",
+                    "email": "lee.cooper@northwestern.edu",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Lee A.D. Cooper",
+                    "email": "mtageld@northwestern.edu",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__panoptils",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__panoptils",
+            "publication_link": "https://doi.org/10.1101/2022.01.08.22268814",
+            "is_preprint": true
+        },
+        {
+            "name": "Circuit-seq",
+            "description": "Circular reconstruction of cut <i>in vitro</i> transposed plasmids using Nanopore sequencing.\n\nRecombinant DNA is a fundamental tool in biotechnology and medicine. Validation of the resulting plasmid sequence is a critical and time-consuming step, which has been dominated for the last 35 years by Sanger sequencing. As plasmid sequences grow more complex with new DNA synthesis and cloning techniques, we need new approaches that address the corresponding validation challenges at scale. Here we prototype a high-throughput plasmid sequencing approach using DNA transposition and Oxford Nanopore sequencing. Our method, Circuit-seq, creates robust, full-length, and accurate plasmid assemblies without prior knowledge of the underlying sequence for approximately $1.50 per plasmid. We demonstrate the power of Circuit-seq across a wide range of plasmid sizes and complexities, generating accurate and contiguous plasmid maps\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://github.com/mckennalab/Circuitseq",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3192",
+                            "term": "Sequence trimming"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0578",
+                            "term": "Plasmid map drawing"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0310",
+                            "term": "Sequence assembly"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3200",
+                            "term": "DNA barcoding"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3295",
+                    "term": "Epigenetics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3168",
+                    "term": "Sequencing"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0196",
+                    "term": "Sequence assembly"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3297",
+                    "term": "Biotechnology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0798",
+                    "term": "Mobile genetic elements"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.25.477550"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Francesco E. Emiliani",
+                    "email": "Francesco.E.Emiliani.GR@Dartmouth.edu",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Aaron McKenna",
+                    "email": "McKenna.Aaron@gmail.com",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__circuit-seq",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__circuit-seq",
+            "publication_link": "https://doi.org/10.1101/2022.01.25.477550",
+            "is_preprint": true
+        },
+        {
+            "name": "VEP",
+            "description": "Data-driven probabilistic personalized brain modeling in drug-resistant epilepsy.\n\nOne-third of 50 million epilepsy patients worldwide suffer from drug resistant epilepsy and are candidates for surgery. Precise estimates of the epileptogenic zone networks (EZNs) are crucial for planning intervention strategies. Here, we present the Virtual Epileptic Patient (VEP), a multimodal probabilistic modeling framework for personalized end-to-end analysis of brain imaging data of drug resistant epilepsy patients. The VEP uses data-driven, personalized virtual brain models derived from patient-specific anatomical (such as T1-MRI, DW-MRI, and CT scan) and functional data (such as stereo-EEG)\n\n||| HOMEPAGE BROKEN!\n\n||| NAME (VEP) SIMILAR TO (PUB. DIFFERENT) bio.tools/vep (Variant Effect Predictor (VEP))",
+            "homepage": "https://github.com/HuifangWang/VEP_atlas_shared.git",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3927",
+                            "term": "Network analysis"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3421",
+                    "term": "Surgery"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3452",
+                    "term": "Tomography"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3379",
+                    "term": "Preclinical and clinical studies"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3315",
+                    "term": "Mathematics"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.19.22269404"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Huifang E Wang",
+                    "email": "elizabethhw@gmail.com",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Viktor Jirsa",
+                    "email": "viktor.jirsa@univ-amu.fr",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__vep",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__vep",
+            "publication_link": "https://doi.org/10.1101/2022.01.19.22269404",
+            "is_preprint": true
+        },
+        {
+            "name": "SOTIP",
+            "description": "a Unified Framework for Microenvironment Modelling with Spatial Omics Data.\n\nThe rapidly developing spatial omics techniques generate datasets with diverse scales and modalities. However, most existing methods focus on modeling dynamics of single cells while ignore microenvironments (MEs) which bridge single cells to tissues. Here we present SOTIP (Spatial Omics mulTIPle-task analysis), a scalable framework incorporating MEs and their interrelationships into a unified graph. Based on this graph, three tasks can be performed, including spatial heterogeneity (SHN) quantification, spatial domain (SDM) identification and differential microenvironment (DME) analysis. We validate SOTIP\u2019s accuracy, robustness, interpretation, and scalability on various datasets by comparing with state-of-art methods. In mammalian cerebral cortex, we reveal a striking gradient SHN pattern with strong correlations with the cortical depth\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "http://SOTIPsuppFigure.pdf",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3799",
+                            "term": "Quantification"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_2640",
+                    "term": "Oncology"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.21203/RS.3.RS-1263025/V1"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__sotip",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__sotip",
+            "publication_link": "https://doi.org/10.21203/RS.3.RS-1263025/V1",
+            "is_preprint": true
+        },
+        {
+            "name": "ExPRSweb",
+            "description": "An Online Repository with Polygenic Risk Scores for Common Health-related Exposures.\n\nComplex traits are influenced by genetic risk factors, lifestyle, and environmental variables, so called exposures. Some exposures, e.g., smoking or lipid levels, have common genetic modifiers identified in genome-wide association studies. Since measurements are often unfeasible, Exposure Polygenic Risk Scores (ExPRSs) offer an alternative to study the influence of exposures on various phenotypes. Here, we collected publicly available summary statistics for 28 exposures and applied four common PRS methods to generate ExPRSs in two large biobanks, the Michigan Genomics Initiative and the UK Biobank. We established ExPRS for 27 exposures and demonstrated their applicability in phenome-wide association studies and as predictors for common chronic conditions",
+            "homepage": "https://prsweb.sph.umich.edu",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3196",
+                            "term": "Genotyping"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3659",
+                            "term": "Regression analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3435",
+                            "term": "Standardisation and normalisation"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3337",
+                    "term": "Biobank"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0625",
+                    "term": "Genotype and phenotype"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3517",
+                    "term": "GWAS study"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0153",
+                    "term": "Lipids"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3518",
+                    "term": "Microarray experiment"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.13.22269176"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Lars G. Fritsche",
+                    "email": "larsf@umich.edu",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__exprsweb",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__exprsweb",
+            "publication_link": "https://doi.org/10.1101/2022.01.13.22269176",
+            "is_preprint": true
+        },
+        {
+            "name": "RBDAct",
+            "description": "Home screening of REM sleep behaviour disorder based on wrist actigraphy in Parkinson\u2019s patients.\n\nABSTRACT Background. REM sleep behaviour disorder (RBD) is a disabling, often overlooked sleep disorder affecting up to 70% of patients with Parkinson\u2019s disease. Identifying and treating RBD is critical to prevent severe sleep-related injuries, both to patients and bedpartners. Current diagnosis relies on nocturnal video-polysomnography, which is an expensive and cumbersome exam requiring specific clinical expertise. Objectives. To design, optimise, and validate a novel home-screening tool, termed RBDAct, that automatically identifies RBD in Parkinson\u2019s patients based on wrist actigraphy only. Methods. Twenty-six Parkinson\u2019s patients underwent two-week home wrist actigraphy worn on their more affected arm, followed by two non-consecutive in-lab evaluations. Patients were classified as RBD versus non-RBD based on dream enactment history and video-polysomnography\n\n||| HOMEPAGE MISSING!",
+            "homepage": "https://doi.org/10.1101/2022.01.23.22269713",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3937",
+                            "term": "Feature extraction"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3379",
+                    "term": "Preclinical and clinical studies"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0634",
+                    "term": "Pathology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3334",
+                    "term": "Neurology"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.23.22269713"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Pietro-Luca Ratti",
+                    "email": "pietroluca.ratti@gmail.com",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__rbdact",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__rbdact",
+            "publication_link": "https://doi.org/10.1101/2022.01.23.22269713",
+            "is_preprint": true
+        },
+        {
+            "name": "massNet",
+            "description": "integrated processing and classification of spatially resolved mass spectrometry data using deep learning for rapid tumor delineation.\n\nAbout the Metabolomics Workbench: The National Institutes of Health (NIH) Common Fund Metabolomics Program was developed with the goal of increasing national capacity in metabolomics by supporting the development of next generation technologies, providing training and mentoring opportunities, increasing the inventory and availability of high quality reference standards, and promoting data sharing and collaboration.\n\nThis data is available at the NIH Common Fund's National Metabolomics Data Repository (NMDR) website, the Metabolomics Workbench, https: www.metabolomicsworkbench.org, where it has been assigned Project ID PR001292.\n\nSee: https://www.metabolomicsworkbench.org/about/howtocite.php.\n\n||| NAME (massNet) SIMILAR TO (PUB. DIFFERENT) bio.tools/massnet (MassNet)",
+            "homepage": "http://dx.doi.org/10.21228/M8Q70T",
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3172",
+                    "term": "Metabolomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3520",
+                    "term": "Proteomics experiment"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2640",
+                    "term": "Oncology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3500",
+                    "term": "Zoology"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1093/BIOINFORMATICS/BTAC032",
+                    "pmid": "35040929",
+                    "pmcid": "PMC8963284"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Nathalie Y R Agar",
+                    "email": "Nathalie_Agar@dfci.harvard.edu",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__massnet",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__massnet",
+            "publication_link": "https://doi.org/10.1093/BIOINFORMATICS/BTAC032",
+            "is_preprint": true
+        },
+        {
+            "name": "GCMR",
+            "description": "Bayesian modeling of item heterogeneity in dichotomous recognition memory data and prospects for computerized adaptive testing.\n\nMost current models of recognition memory fail to separately model item and person heterogeneity which makes it difficult to assess ability at the latent construct level and prevents the administration of adaptive tests. Here we propose to employ a General Condorcet Model for Recognition (GCMR) in order to estimate ability, response bias and item difficulty in dichotomous recognition memory tasks. Using a Bayesian modeling framework and MCMC inference, we perform 3 separate validation studies comparing GCMR to the Rasch model from IRT and the 2-High-Threshold (2HT) recognition model. First, two simulations demonstrate that recovery of GCMR ability estimates with varying sparsity and test difficulty is more robust and that estimates improve from the two other models under common test scenarios\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://github.con/jguesten/GCMR",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2426",
+                            "term": "Modelling and simulation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3659",
+                            "term": "Regression analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3283",
+                            "term": "Anonymisation"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3304",
+                    "term": "Neurobiology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3379",
+                    "term": "Preclinical and clinical studies"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3400",
+                    "term": "Allergy, clinical immunology and immunotherapeutics"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1038/S41598-022-04997-3",
+                    "pmid": "35075157",
+                    "pmcid": "PMC8786965"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Jeremie G\u00fcsten",
+                    "email": "jeremie.guesten@med.ovgu.de",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__gcmr",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__gcmr",
+            "publication_link": "https://doi.org/10.1038/S41598-022-04997-3",
+            "is_preprint": true
+        },
+        {
+            "name": "DLearnMS",
+            "description": "An Interpretable Deep Learning Approach for Biomarker Detection in LC-MS Proteomics Data.\n\nAnalyzing mass spectrometry-based proteomics data with deep learning (DL) approaches poses several challenges due to the high dimensionality, low sample size, and high level of noise. Additionally, DL-based workflows are often hindered to be integrated into medical settings due to the lack of interpretable explanation. We present DLearnMS, a DL biomarker detection framework, to address these challenges on proteomics instances of liquid chromatography-mass spectrometry (LC-MS) - a well-established tool for quantifying complex protein mixtures. Our DLearnMS framework learns the clinical state of LC-MS data instances using convolutional neural networks. Based on the trained neural networks, we show how biomarkers can be identified using layer-wise relevance propagation. This enables detecting discriminating regions of the data and the design of more robust networks\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://github.com/SaharIravani/DlearnMS",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3629",
+                            "term": "Deisotoping"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3215",
+                            "term": "Peak detection"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3767",
+                            "term": "Protein identification"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3360",
+                    "term": "Biomarkers"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0121",
+                    "term": "Proteomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0080",
+                    "term": "Sequence analysis"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3520",
+                    "term": "Proteomics experiment"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1109/TCBB.2022.3141656",
+                    "pmid": "35007196"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__dlearnms",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__dlearnms",
+            "publication_link": "https://doi.org/10.1109/TCBB.2022.3141656",
+            "is_preprint": true
+        },
+        {
+            "name": "OptiDiff",
+            "description": "structural variation detection from single optical mapping reads.\n\nDetecting structural variation (SV) in eukaryotic genomes is of broad interest due to its often dramatic phenotypic effects, but remains a major, costly challenge based on DNA sequencing data. A cost-effective alternative in detecting large-scale SV has become available with advances in optical mapping technology. However, the algorithmic approaches to identifying SVs from optical mapping data are limited. Here, we propose a novel, open-source SV detection tool, OptiDiff, which employs a single molecule based approach to detect and classify homozygous and heterozygous SVs at coverages as low as 20x, showing better performance than the state of the art\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://gitlab.com/akdel/optidiff",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3228",
+                            "term": "Structural variation detection"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2429",
+                            "term": "Mapping"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3227",
+                            "term": "Variant calling"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3175",
+                    "term": "Structural variation"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0102",
+                    "term": "Mapping"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0621",
+                    "term": "Model organisms"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3047",
+                    "term": "Molecular biology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0196",
+                    "term": "Sequence assembly"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.08.475501"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Mehmet Akdel",
+                    "email": "mehmet.akdel@wur.nl",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__optidiff",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__optidiff",
+            "publication_link": "https://doi.org/10.1101/2022.01.08.475501",
+            "is_preprint": true
+        },
+        {
+            "name": "scJoint",
+            "description": "scJoint integrates atlas-scale single-cell RNA-seq and ATAC-seq data with transfer learning.\n\nSingle-cell multiomics data continues to grow at an unprecedented pace. Although several methods have demonstrated promising results in integrating several data modalities from the same tissue, the complexity and scale of data compositions present in cell atlases still pose a challenge. Here, we present scJoint, a transfer learning method to integrate atlas-scale, heterogeneous collections of scRNA-seq and scATAC-seq data. scJoint leverages information from annotated scRNA-seq data in a semisupervised framework and uses a neural network to simultaneously train labeled and unlabeled data, allowing label transfer and joint visualization in an integrative framework\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://github.com/SydneyBioX/scJoint",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0337",
+                            "term": "Visualisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3891",
+                            "term": "Essential dynamics"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3935",
+                            "term": "Dimensionality reduction"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3170",
+                    "term": "RNA-Seq"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0625",
+                    "term": "Genotype and phenotype"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3676",
+                    "term": "Exome sequencing"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3308",
+                    "term": "Transcriptomics"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1038/S41587-021-01161-6",
+                    "pmid": "35058621",
+                    "pmcid": "PMC9186323"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Wing H. Wong",
+                    "email": "whwong@stanford.edu",
+                    "orcidid": "https://orcid.org/0000-0001-7466-2339",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Y. X. Rachel Wang",
+                    "email": "rachel.wang@sydney.edu.au",
+                    "orcidid": "https://orcid.org/0000-0003-0594-680X",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__scjoint",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__scjoint",
+            "publication_link": "https://doi.org/10.1038/S41587-021-01161-6",
+            "is_preprint": true
+        },
+        {
+            "name": "SCARF",
+            "description": "Auto-Segmentation Clinical Acceptability & Reproducibility Framework for Benchmarking Essential Radiation Therapy Targets in Head and Neck Cancer.\n\nBackground: and Purpose: Auto-segmentation of organs at risk (OAR) in cancer patients is essential for enhancing radiotherapy planning efficacy and reducing inter-observer variability. Deep learning auto-segmentation models have shown promise, but their lack of transparency and reproducibility hinders their generalizability and clinical acceptability, limiting their use in clinical settings. Materials and Methods:\n\n||| HOMEPAGE MISSING!\n\n||| NAME EQUAL TO (PUB. DIFFERENT) bio.tools/scarf\n\n||| NAME (SCARF) SIMILAR TO (PUB. DIFFERENT) bio.tools/scarf-genomics (Scarf)",
+            "homepage": "https://doi.org/10.1101/2022.01.15.22269276",
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3384",
+                    "term": "Medical imaging"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3379",
+                    "term": "Preclinical and clinical studies"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2640",
+                    "term": "Oncology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3393",
+                    "term": "Quality affairs"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.15.22269276"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Andrew Hope",
+                    "email": "benjamin.haibe-kains@uhn.ca",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Benjamin Haibe-Kains",
+                    "email": "andrew.hope@rmp.uhn.ca",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__scarf",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__scarf",
+            "publication_link": "https://doi.org/10.1101/2022.01.15.22269276",
+            "is_preprint": true
+        },
+        {
+            "name": "MutSigCVsyn",
+            "description": "Identification of Thirty Synonymous Cancer Drivers.\n\nSynonymous mutations, which change only the DNA sequence but not the encoded protein sequence, can affect protein structure and function, mRNA maturation, and mRNA half-lives. The possibility that synonymous mutations can act as cancer drivers has been explored in several recent studies. However, none of these studies control for all three levels (patient, histology, and gene) of mutational heterogeneity that are known to affect the accurate identification of non-synonymous cancer drivers. Here, we create an algorithm, MutSigCVsyn, an adaptation of MutSigCV, to identify synonymous cancer drivers based on a novel non-coding background model that takes into account the mutational heterogeneity across these levels. Examining 2,572 PCAWG cancer whole-genome sequences, MutSigCVsyn identifies 30 novel synonymous drivers that include mutations in promising candidates like BCL-2\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://github.com/ryy1221/MutSigCVsyn",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3225",
+                            "term": "Variant classification"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3227",
+                            "term": "Variant calling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0314",
+                            "term": "Gene expression profiling"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3512",
+                    "term": "Gene transcripts"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2640",
+                    "term": "Oncology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0199",
+                    "term": "Genetic variation"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3170",
+                    "term": "RNA-Seq"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0622",
+                    "term": "Genomics"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.16.476507"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Justin Pritchard",
+                    "email": "jrp94@psu.edu",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Edward O\u2019Brien",
+                    "email": "epo2@psu.edu",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__mutsigcvsyn",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__mutsigcvsyn",
+            "publication_link": "https://doi.org/10.1101/2022.01.16.476507",
+            "is_preprint": true
+        },
+        {
+            "name": "rescomp",
+            "description": "An R package for defining, simulating and visualizing ODE models of consumer-resource interactions.\n\nEfficient Modelling of Resource Competition.\n\nAn R package for efficient ODE modelling of resource competition.\n\nrescomp is an R package that supports the definition, simulation and visualization of ODE models of ecological consumer-resource interactions. In essence, it is a consumer-resource modelling focused interface to the excellent deSolve package.\n\nrescomp is an R package for generating, simulating and visualising ODE models of consumer-resource interactions. In essence, it is a consumer-resource modelling focused interface to the canonical deSolve package.",
+            "homepage": "https://andrewletten.github.io/rescomp/",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3946",
+                            "term": "Ecological modelling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0337",
+                            "term": "Visualisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3891",
+                            "term": "Essential dynamics"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0610",
+                    "term": "Ecology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3068",
+                    "term": "Literature and language"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3315",
+                    "term": "Mathematics"
+                }
+            ],
+            "language": [
+                "R"
+            ],
+            "link": [
+                {
+                    "url": "https://andrewletten.github.io/rescomp/articles/rescomp.html",
+                    "type": [
+                        "Other"
+                    ]
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.11.475574"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Andrew D. Letten",
+                    "email": "a.letten@uq.edu.au",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__rescomp",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__rescomp",
+            "publication_link": "https://doi.org/10.1101/2022.01.11.475574",
+            "is_preprint": true
+        },
+        {
+            "name": "coveR",
+            "description": "An R package for processing Digital Cover Photography images to retrieve forest canopy attributes.\n\nDigital Cover Photography (DCP) is an increasingly popular tool for estimating canopy cover and leaf area index (LAI). However, existing solutions to process canopy images are predominantly tailored for fisheye photography, whereas open-access tools for DCP are lacking. We developed an R package ( coveR ) to support the whole processing of DCP images in an automated, fast, and reproducible way. The package functions, which are designed for step-by-step single-image analysis, can be performed sequentially in a pipeline, while also allowing simple implementation for batch-processing bunches of images. A case study is presented to demonstrate the reliability of canopy attributes derived from coveR in pure beech ( Fagus sylvatica L.) stands with variable canopy density and structure\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "https://gitlab.com/fchianucci/coveR",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3443",
+                            "term": "Image analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2422",
+                            "term": "Data retrieval"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3435",
+                            "term": "Standardisation and normalisation"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3382",
+                    "term": "Imaging"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0769",
+                    "term": "Workflows"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0102",
+                    "term": "Mapping"
+                }
+            ],
+            "language": [
+                "R"
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.13.475850"
+                }
+            ],
+            "credit": [
+                {
+                    "email": "francesco.chianucci@crea.gov.it",
+                    "typeEntity": "Person"
+                },
+                {
+                    "email": "fchianucci@gmail.com",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__cover",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__cover",
+            "publication_link": "https://doi.org/10.1101/2022.01.13.475850",
+            "is_preprint": true
+        },
+        {
+            "name": "flexplavaan",
+            "description": "Visualizing latent variable models with flexplavaan.\n\nLatent variable models (LVMs) are incredibly flexible tools that allow users to address research questions they might otherwise never be able to answer (McDonald, 2013). However, one major limitation of LVMs is evaluating model fit. There is no universal consensus about how to evaluate model fit, either globally or locally. Part of the reason evaluating these models is difficult is because fit is typically reduced to a handful of statistics that may or may not reflect the model's adequacy and or assumptions. In this article we argue that proper evaluation of model fit <i>must< i> include visualizing both the raw data and the model-implied fit. Visuals reveal, at a glance, the fit of the model and whether the model's assumptions have been met. Unfortunately, tools for visualizing LVMs have historically been limited\n\n||| HOMEPAGE BROKEN!",
+            "homepage": "http://github.com/dustinfife/flexplavaan",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0337",
+                            "term": "Visualisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3664",
+                            "term": "Statistical modelling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3659",
+                            "term": "Regression analysis"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_2269",
+                    "term": "Statistics and probability"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3382",
+                    "term": "Imaging"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0621",
+                    "term": "Model organisms"
+                }
+            ],
+            "language": [
+                "R"
+            ],
+            "publication": [
+                {
+                    "doi": "10.1037/MET0000468",
+                    "pmid": "35084889"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__flexplavaan",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__flexplavaan",
+            "publication_link": "https://doi.org/10.1037/MET0000468",
+            "is_preprint": true
+        },
+        {
+            "name": "WISN",
+            "description": "Lessons learned from implementation of the Workload Indicator of Staffing Need (WISN) methodology.\n\nAn experience with the use of WISN tool to calculate staffing in a palliative care hospital in Brazil.\n\nBackground Staffing of health services ought to consider the workload experienced to maximize efficiency. However, this is rarely the case, due to lack of an appropriate approach. The World Health Organization (WHO) developed and has promoted the Workload Indicators of Staffing Need (WISN) methodology globally. Due to its relative simplicity compared to previous methods, the WISN has been used extensively, particularly after its computerization in 2010. Many lessons have been learnt from the introduction and promotion of the methodology across the globe but have, hitherto, not been synthesized for technical and policy consideration\n\n||| HOMEPAGE MISSING!\n\n||| CORRECT NAME OF TOOL COULD ALSO BE palliative, palliative care, staffing, care",
+            "homepage": "https://www.ncbi.nlm.nih.gov/pubmed/?term=35090491",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3762",
+                            "term": "Service composition"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3436",
+                            "term": "Aggregation"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3390",
+                    "term": "Nutritional science"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0749",
+                    "term": "Transcription factors and regulatory sites"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2640",
+                    "term": "Oncology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3068",
+                    "term": "Literature and language"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3305",
+                    "term": "Public health and epidemiology"
+                }
+            ],
+            "language": [
+                "Delphi"
+            ],
+            "publication": [
+                {
+                    "doi": "10.1186/S12960-021-00675-Z",
+                    "pmid": "35090491",
+                    "pmcid": "PMC8796553"
+                },
+                {
+                    "doi": "10.1186/S12960-021-00680-2",
+                    "pmid": "35090468",
+                    "pmcid": "PMC8796329"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Grace Nyendwoha Namaganda",
+                    "email": "gnamaganda@yahoo.com",
+                    "orcidid": "https://orcid.org/0000-0002-7503-2424",
+                    "typeEntity": "Person"
+                },
+                {
+                    "name": "Alessandra Pereira da Silva",
+                    "email": "alessandra.pereira.dra@gmail.com",
+                    "orcidid": "https://orcid.org/0000-0001-8730-889X",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__wisn",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__wisn",
+            "publication_link": "https://doi.org/10.1186/S12960-021-00675-Z",
+            "is_preprint": true
+        },
+        {
+            "name": "randtip",
+            "description": "generalized framework to expand incomplete phylogenies using non-molecular phylogenetic information.\n\nThe increasing availability of molecular information has lifted our understanding of species evolutionary relationships to unprecedent levels. However, current estimates of the world\u2019s biodiversity suggest that about a fifth of all extant species are yet to be described, and we still lack molecular information for many of the known species. Hence, evolutionary biologists will have to tackle phylogenetic uncertainty for a long time to come. This prospect has urged the development of software to expand phylogenies based on non-molecular phylogenetic information, and while the available tools provide some valuable features, major drawbacks persist and some of the proposed solutions are hardly generalizable to any group of organisms. Here, we present a completely generalized and flexible framework to expand incomplete molecular phylogenies\n\n||| HOMEPAGE MISSING!",
+            "homepage": "https://doi.org/10.1101/2022.01.04.474924",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0323",
+                            "term": "Phylogenetic inference"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0326",
+                            "term": "Phylogenetic tree editing"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0567",
+                            "term": "Phylogenetic tree visualisation"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0084",
+                    "term": "Phylogeny"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3050",
+                    "term": "Biodiversity"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0621",
+                    "term": "Model organisms"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0780",
+                    "term": "Plant biology"
+                }
+            ],
+            "language": [
+                "R"
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.04.474924"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Rafael Molina-Venegas",
+                    "email": "rafmolven@gmail.com",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__randtip",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__randtip",
+            "publication_link": "https://doi.org/10.1101/2022.01.04.474924",
+            "is_preprint": true
+        },
+        {
+            "name": "circFgfr2 miR-133a-3p DLX3 RUNX2",
+            "description": "Circular RNA CircFgfr2 Promotes Osteogenic Differentiation of Rat Dental Follicle Cells via Sponging MicroRNA miR-133a-3p and Up-regulating Distal-less Homeobox DLX3.\n\nBackground: As promising seed cells of periodontal tissue regeneration, dental follicle cells (DFCs) can differentiate into cementoblasts, osteoblasts and fibroblasts upon the regulation of signaling pathways. Emerging evidence shows that circular RNA (circRNA) may participate in tooth regeneration, however its effect on DFCs remains unclear. Our early research found that the expression of circFgfr2 was significantly up-regulated when the rat DFCs were incubated by mineral induction medium for 4 weeks, while the expression of miR-133 was down-regulated\n\n||| HOMEPAGE MISSING!\n\n||| CORRECT NAME OF TOOL COULD ALSO BE circFgfr2 miR-133a-3p DLX3, circFgfr2 miR-133a-3p, circFgfr2 miR-133a-3p miR-133a-5p, circFgfr2 miR-133a-3p miR-133a-5p bone-related",
+            "homepage": "https://doi.org/10.21203/RS.3.RS-1181994/V1",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0463",
+                            "term": "miRNA target prediction"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3223",
+                            "term": "Differential gene expression profiling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2436",
+                            "term": "Gene-set enrichment analysis"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0659",
+                    "term": "Functional, regulatory and non-coding RNA"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0749",
+                    "term": "Transcription factors and regulatory sites"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3512",
+                    "term": "Gene transcripts"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0602",
+                    "term": "Molecular interactions, pathways and networks"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3168",
+                    "term": "Sequencing"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.21203/RS.3.RS-1181994/V1"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__circfgfr2-mir-133a-3p-dlx3-runx2",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__circfgfr2-mir-133a-3p-dlx3-runx2",
+            "publication_link": "https://doi.org/10.21203/RS.3.RS-1181994/V1",
+            "is_preprint": true
+        },
+        {
+            "name": "Lira",
+            "description": "Rotational Invariant Shape and Electrostatic Descriptors for Small Molecules and Protein Pockets based on Real Spherical Harmonics.\n\nSynthetic Biology through directed evolution \u2013 The Pinheiro Lab.\n\nOur team is part of the Medicinal Chemistry Group at the Rega Institute for Medical Research, and members of the Faculty of Pharmaceutical and Pharmacological Sciences at KU Leuven. We are based on the Gasthuisberg Campus, on the outskirts of Leuven. For general enquiries concerning the group, our research of available positions, please contact Prof.\u2026.\n\nSynthetic Biology through directed evolution.\n\nOur team is part of the Medicinal Chemistry Group at the Rega Institute for Medical Research, and members of the Faculty of Pharmaceutical and Pharmacological Sciences at KU Leuven.\n\n||| NAME (Lira) SIMILAR TO (PUB. DIFFERENT) bio.tools/lira (LIRA)",
+            "homepage": "https://pinheirolab.com/",
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_4009",
+                            "term": "Small molecule design"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0482",
+                            "term": "Protein-ligand docking"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0224",
+                            "term": "Query and retrieval"
+                        }
+                    ]
+                }
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0209",
+                    "term": "Medicinal chemistry"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3895",
+                    "term": "Synthetic biology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0154",
+                    "term": "Small molecules"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3299",
+                    "term": "Evolutionary biology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0202",
+                    "term": "Pharmacology"
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/2022.01.19.476747"
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Rinaldo W. Montalv\u00e3o",
+                    "email": "rinaldowander.montalvao@kuleuven.be",
+                    "typeEntity": "Person"
+                }
+            ],
+            "confidence_flag": "high",
+            "editPermission": {
+                "type": "public"
+            },
+            "biotoolsID": "pub2tools2023__lira",
+            "tool_link": "https://bio-tools-dev.sdu.dk/pub2tools2023__lira",
+            "publication_link": "https://doi.org/10.1101/2022.01.19.476747",
             "is_preprint": true
         }
     ]

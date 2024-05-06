@@ -47,7 +47,7 @@ def is_preprint_from_response(response):
         
         if match:
             updated_publication = update_publication_with_match(match)
-            original_result['publication'] = [updated_publication]
+            return False, updated_publication
 
     return False, original_result
 
@@ -61,7 +61,7 @@ def update_tool_with_publication(tool, is_preprint, publication_info):
         tool['is_preprint'] = True
     else:
         if publication_info:
-            tool['publication'] = publication_info
+            tool['publication'] = [publication_info]
         if 'doi' in tool['publication'][0]:
             tool['publication_link'] = f"https://doi.org/{tool['publication'][0]['doi']}"
         else:
@@ -80,9 +80,9 @@ def identify_preprint(tool):
 
     doi = tool['publication'][0]['doi']
     response = search_europe_pmc(doi)
-    is_preprint, result = is_preprint_from_response(response)
+    is_preprint, publication_info = is_preprint_from_response(response)
 
-    return update_tool_with_publication(tool, is_preprint, result.get('publication'))
+    return update_tool_with_publication(tool, is_preprint, publication_info)
 
 
 def identify_preprints(rerun=True, tools=None, json_prp=None):

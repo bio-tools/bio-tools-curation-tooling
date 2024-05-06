@@ -15,31 +15,22 @@ def generate_file_name(prefix, file_date):
     return f"{prefix}_{year}_{month}.csv"
 
 
-def generate_csv(tools, to_curate, file_date, include_preprints=True):
-    """Generates a CSV file for tools, separating or including preprints based on parameters."""
+def generate_csv(pub_tools, pub_preprints, to_curate, file_date):
+    """Generates a CSV file for published tools and newly published preprints."""
     file_name = generate_file_name('pub2tools', file_date)
-    
-    # Filter tools based on 'is_preprint' and 'to_curate'
-    publications = filter_tools(tools, to_curate, lambda x: not x['is_preprint'])
-    preprints = []
-
-    if include_preprints:
-        preprints = filter_tools(tools, to_curate, lambda x: x['is_preprint'])
-
-    print(f"Writing {to_curate} files: {len(publications)} publications and {len(preprints)} preprints to {file_name}")
-    
-    # Combine lists if including preprints, else just use publications
-    combined_tools = publications + (['PREPRINTS'] if preprints else []) + preprints
-    
-    # Write to CSV, handle 'PREPRINTS' marker
+    to_curate_tools = filter_tools(pub_tools, to_curate)
+    # Use to_curate publications and previously identified preprints
+    combined_tools = to_curate_tools + pub_preprints    
+    # Write to CSV
     with open(file_name, 'w', newline='') as fileobj:
         writerobj = csv.writer(fileobj)
         writerobj.writerow(['tool_link', 'tool_name', 'homepage', 'publication_link'])
-        for tool in combined_tools:
-            if tool == 'PREPRINTS':
-                writerobj.writerow([tool])
-            else:
-                writerobj.writerow([tool['tool_link'], tool['name'], tool['homepage'], tool['publication_link']])
+        for tool in combined_tools[:to_curate]:
+            writerobj.writerow([tool['tool_link'], tool['name'], tool['homepage'], tool['publication_link']])
+        writerobj.writerow(['NEWLY PUBLISHED PREPRINTS'])
+        for tool in combined_tools[to_curate:]:
+            writerobj.writerow([tool['tool_link'], tool['name'], tool['homepage'], tool['publication_link']])
     
-    leftover_tools = [tool for tool in tools if tool not in publications and tool not in preprints]
-    return publications + preprints, leftover_tools
+    leftover_tools = [tool for tool in pub_tools if tool not in combined_tools]
+    return combined_tools, leftover_tools
+

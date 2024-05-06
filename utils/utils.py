@@ -3,7 +3,7 @@ import requests
 
 def check_date(pub2tools_file):
     '''Function to check the date of the pub2tools file'''
-    log_file = open(pub2tools_file, 'r')
+    log_file = open(pub2tools_file, 'r', encoding="utf8")
     textfile = log_file.read()
     log_file.close()
     date = re.findall("--month (\d+)-(\d+)", textfile)

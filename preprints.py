@@ -44,7 +44,7 @@ def is_preprint_from_response(response):
         external_id = commentCorrection.get('id')
         doi = original_publication.get('doi')
         match = query_for_potential_match(external_id, doi)
-
+        
         if match:
             updated_publication = update_publication_with_match(match)
             original_result['publication'] = [updated_publication]

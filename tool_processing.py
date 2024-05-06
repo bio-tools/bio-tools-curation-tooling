@@ -3,7 +3,7 @@ import re
 def generate_biotoolsID(name):
     biotoolsID = re.sub('[^a-zA-Z0-9_~ .-]*', '',name)
     biotoolsID = re.sub('[ ]+','-', biotoolsID)
-    biotoolsID = 'pub2tools2023__' + biotoolsID
+    biotoolsID = 'pub2tools2024__' + biotoolsID
 
     return biotoolsID.lower()
 

@@ -64,8 +64,10 @@ def update_tool_with_publication(tool, is_preprint, publication_info):
             tool['publication'] = [publication_info]
         if 'doi' in tool['publication'][0]:
             tool['publication_link'] = f"https://doi.org/{tool['publication'][0]['doi']}"
-        else:
+        elif 'pmid' in tool['publication'][0]:
             tool['publication_link'] = f"https://pubmed.ncbi.nlm.nih.gov/{tool['publication'][0]['pmid']}"
+        else:
+            tool['publication_link'] = f"https://pubmed.ncbi.nlm.nih.gov/{tool['publication'][0]['pmcid']}"
         
         tool['is_preprint'] = False
   

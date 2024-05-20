@@ -5,4 +5,4 @@ The repo collect scripts and tools for aiding in the curation of new tools, e.g.
 
 #### Tutorials
 
-The file _workflow_tutorial.ipynb_ includes 3 detailed tutorials on how to implement the workflow.
+The file _workflow_tutorial.ipynb_ includes a detailed tutorial on how to implement the workflow.
